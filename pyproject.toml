@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audioscope"
+version = "0.1.0"
+description = "Audio visualization tool - generates PNG frame sequences from WAV files"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy==2.5.3",
+    "scipy==1.18.1",
+    "soundfile==0.14",
+    "Pillow==12.3.0",
+    "click==8.5.0",
+    "rich==15.0.0",
+    "matplotlib==3.11.2",
+]
+
+[project.scripts]
+visualize = "audioscope.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["audioscope*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+]

@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# App
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wmv
+output/*
+!output/.gitkeep
+data/*
+!data/.gitkeep
