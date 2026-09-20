@@ -14,13 +14,17 @@ A command-line audio visualization tool that renders WAV files as PNG frame sequ
 
 ![All modules, plasma theme](images/plasma.png)
 
-### Dark
+### Matrix
 
-![All modules, dark theme](images/dark.png)
+![All modules, matrix theme](images/matrix.png)
 
 ### Ember
 
 ![All modules, ember theme](images/ember.png)
+
+### Red
+
+![All modules, red theme](images/red.png)
 
 ---
 
@@ -158,7 +162,7 @@ Key options: `--n-slices`, `--db-range`
 | ------------------ | ------------------------------------------------------------------------------ |
 | `neon` _(default)_ | Dark violet-black background; spectrum runs purple → magenta → orange → yellow |
 | `plasma`           | Near-black with deep blue-to-indigo-to-yellow gradient                         |
-| `dark`             | Classic monochrome black; green/amber level colors                             |
+| `matrix`           | Black background; green phosphor aesthetic, spectrum green → amber → red       |
 | `ember`            | Warm charcoal background; fire-style red → orange → white                      |
 
 ```bash
@@ -177,7 +181,7 @@ visualize -i audio.wav -o output/frames --theme plasma
 | `--fps`           | `24`                            | Frames per second                                                      |
 | `--height`        | `400`                           | Height of each module in pixels                                        |
 | `--width`         | —                               | Force a fixed width for every module                                   |
-| `--theme`         | `neon`                          | `neon` · `plasma` · `dark` · `ember`                                   |
+| `--theme`         | `neon`                          | `neon` · `plasma` · `matrix` · `ember` · `red`                                   |
 | `--fft-size`      | `4096`                          | FFT window size (power of 2 recommended)                               |
 | `--window`        | `hann`                          | Window function: `hann` · `hamming` · `blackman` · `bartlett` · `flat` |
 | `--db-range`      | `80`                            | Displayed dynamic range in dB                                          |

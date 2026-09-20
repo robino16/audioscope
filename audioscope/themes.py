@@ -186,8 +186,8 @@ THEME_PLASMA = Theme(
     correlation_neg_color=(255, 0, 100),
 )
 
-THEME_DARK = Theme(
-    name="dark",
+THEME_MATRIX = Theme(
+    name="matrix",
     background=(10, 10, 10),
     grid_color=(25, 25, 25),
     text_color=(180, 180, 180),
@@ -272,9 +272,54 @@ THEME_EMBER = Theme(
     correlation_neg_color=(255, 50, 0),
 )
 
+THEME_RED = Theme(
+    name="red",
+    background=(8, 0, 0),
+    grid_color=(30, 6, 6),
+    text_color=(255, 110, 110),
+    border_color=(75, 12, 12),
+    accent_color=(255, 40, 40),
+    peak_color=(255, 255, 200),
+    clip_color=(255, 255, 255),
+    spectrum_stops=[
+        (0.00, (18, 0, 0)),
+        (0.30, (110, 0, 0)),
+        (0.55, (210, 0, 0)),
+        (0.72, (255, 50, 0)),
+        (0.88, (255, 140, 60)),
+        (1.00, (255, 245, 220)),
+    ],
+    waveform_stops=[
+        (0.00, (55, 0, 0)),
+        (0.50, (190, 15, 15)),
+        (1.00, (255, 110, 90)),
+    ],
+    spectrogram_stops=[
+        (0.00, (8, 0, 0)),
+        (0.14, (45, 0, 0)),
+        (0.32, (130, 0, 0)),
+        (0.52, (220, 0, 0)),
+        (0.72, (255, 70, 10)),
+        (0.88, (255, 170, 60)),
+        (1.00, (255, 250, 210)),
+    ],
+    level_meter_stops=[
+        (0.00, (70, 8, 8)),
+        (0.65, (200, 20, 20)),
+        (0.83, (255, 90, 0)),
+        (0.93, (255, 210, 0)),
+        (1.00, (255, 255, 255)),
+    ],
+    stereo_dot_color=(255, 50, 50),
+    stereo_trail_color=(90, 8, 8),
+    correlation_pos_color=(255, 70, 70),
+    correlation_neg_color=(180, 0, 0),
+)
+
 THEMES = {
     "neon": THEME_NEON,
     "plasma": THEME_PLASMA,
-    "dark": THEME_DARK,
+    "matrix": THEME_MATRIX,
     "ember": THEME_EMBER,
+    "red": THEME_RED,
 }
